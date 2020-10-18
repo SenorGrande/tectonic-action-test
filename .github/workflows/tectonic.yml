@@ -13,3 +13,4 @@ jobs:
       with:
         tex_path: 'dir/main.tex'
         push: 'yes'
+        push_path: 'thing'
