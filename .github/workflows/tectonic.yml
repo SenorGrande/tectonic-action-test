@@ -7,9 +7,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Compilation
-      uses: SenorGrande/tectonic-action@master
+      uses: SenorGrande/tectonic-action@test-custom-path
       env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         tex_path: 'dir/main.tex'
         push: 'yes'
+        push_path: 'thing/'
